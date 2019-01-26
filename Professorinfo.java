@@ -18,7 +18,7 @@ public class Professorinfo {
 
     public String profEmail(String cID){
         //MongoClient mongoClient = new MongoClient("localhost", 9010);
-        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://George:george1@ds159563.mlab.com:59563/project"));
+        MongoClient mongoClient = new MongoClient(new MongoClientURI("PUT IN PATH FOR YOUR MONGODBSERVER"));
         System.out.println("Server connection succesfully done");
         DB db = mongoClient.getDB("project");
         DBCollection collection1 = db.getCollection("Student");//ACCESSING THE COLLECTION Courses
