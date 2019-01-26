@@ -31,7 +31,7 @@ public class ExtractStudentList {
         String qrCodeText;
         String message;
 
-        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://George:george1@ds159563.mlab.com:59563/project"));//CONNECTING TO THE MONGO DB SERVER
+        MongoClient mongoClient = new MongoClient(new MongoClientURI("PUT IN PATH FOR YOUR MONGODBSERVER"));//CONNECTING TO THE MONGO DB SERVER
         //MongoClient mongoClient = new MongoClient("localhost", 9010);
         System.out.println("Server connection succesfully done");
         DB db = mongoClient.getDB("project");//ACCESSING THE DATABASE project
