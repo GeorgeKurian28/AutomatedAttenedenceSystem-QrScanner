@@ -99,8 +99,8 @@ public class SendEmail {
 
         // Enter your correct gmail UserID and Password
         // if you have 2FA enabled then provide App Specific Password
-        transport.connect("smtp.gmail.com", "USE", "paulaiken");//("smtp.gmail.com", "USERNAM", "PASSWORD") for your email
-        //transport.connect("smtp.gmail.com", "seedlabsubunt@gmail.com", "Aasfamu2018$");
+        transport.connect("smtp.gmail.com", "USE", "TYPE YOU PASSWPRD");//("smtp.gmail.com", "USERNAM", "PASSWORD") for your email
+        //transport.connect("smtp.gmail.com", "EMAILADDRESS", "PASSWORD");
         transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
         transport.close();
         System.out.println("\n\n ===> Your Java Program has just sent an Email successfully. Check your email..");
